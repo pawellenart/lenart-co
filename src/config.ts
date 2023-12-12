@@ -3,7 +3,7 @@
 
 export const SITE_TITLE = 'Paweł Lenart';
 export const SITE_DESCRIPTION = 'My personal blog';
-// export const TWITTER_HANDLE = '@yourtwitterhandle';
+export const TWITTER_HANDLE = '';
 export const MY_NAME = 'Paweł Lenart';
 
 // setup in astro.config.mjs
