@@ -101,6 +101,10 @@
 
 @layer components {
   /* ------ GLOBAL STYLES - START ------ */
+  header {
+    background-color: theme('colors.bg.body');
+  }
+
   strong {
     font-weight: 600;
     color: theme('colors.text.bold');
@@ -215,6 +219,10 @@
 
   .animated-link.show:after {
     transform: translateZ(0) scale(1);
+  }
+
+  .blog-item-link {
+    @apply transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_55%] hover:bg-[length:100%_55%] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue;
   }
 
   /* ------ REUSABLE UTILS - END ------ */
