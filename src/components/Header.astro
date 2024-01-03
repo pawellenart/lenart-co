@@ -1,9 +1,11 @@
 ---
 import Nav from './Nav.astro';
 import DarkModeToggle from './DarkModeToggle.astro';
+import DevModeHeader from './DevModeHeader.astro';
 ---
 
-<header class="sticky top-0">
+<DevModeHeader />
+<header class="flex justify-between">
   <a
     class="unset absolute z-10 left-[50%] -top-[100rem] translate-x-[-50%] bg-white text-black px-8 py-2 focus:top-[initial]"
     href="#main"
@@ -11,22 +13,22 @@ import DarkModeToggle from './DarkModeToggle.astro';
     Skip to content
   </a>
   <Nav />
-  <div
-    class="justify-self-end py-2 flex items-center content-center text-text-bold"
-  >
-    <a
-      class="unset ml-4 rounded-sm transition-[background-size] duration-150 bg-left-bottom bg-[length:0%_55%] hover:bg-[length:100%_55%] bg-no-repeat bg-gradient-to-r from-primary-blue to-primary-blue dark:bg-none dark:hover:text-primary-blue"
-      href="https://www.linkedin.com/in/pawellenart/"
-      target="_blank"
-    >
-      <i
-        class="fa-brands fa-linkedin"
-        aria-hidden="true"
-        title="Paweł Lenart on LinkedIn"></i>
-      <span>LinkedIn</span>
-    </a>
+  <div class="flex flex-inline items-center">
+    <div class="py-2 items-center content-center text-text-bold">
+      <a
+        class="unset animated-link"
+        href="https://www.linkedin.com/in/pawellenart/"
+        target="_blank"
+      >
+        <i
+          class="fa-brands fa-linkedin"
+          aria-hidden="true"
+          title="Paweł Lenart on LinkedIn"></i>
+        <span class="hidden md:inline">LinkedIn</span>
+      </a>
+    </div>
+    <DarkModeToggle />
   </div>
-  <DarkModeToggle />
 </header>
 <style>
   header {

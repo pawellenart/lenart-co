@@ -1,16 +1,14 @@
 ---
-import PageMeta from '../components/PageMeta.astro';
 import PageLayout from '../layouts/PageLayout.astro';
 import Intro from '../components/Intro.astro';
-import AboutTheTheme from '../components/AboutTheTheme.astro';
-import { SITE_TITLE } from '../config';
 import Blog from 'src/components/Blog.astro';
+import LogoCloud from 'src/components/LogoCloud.astro';
 ---
 
 <PageLayout>
   <Fragment slot="main">
     <Intro />
     <Blog />
-    <!-- <AboutTheTheme /> -->
+    <LogoCloud />
   </Fragment>
 </PageLayout>

@@ -11,6 +11,8 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
+        camayana: '#d62828',
+        'camayana-light': '#DF5858',
         primary: {
           blue: 'rgb(var(--color-primary-blue) / <alpha-value>)',
           green: 'rgb(var(--color-primary-green) / <alpha-value>)',
