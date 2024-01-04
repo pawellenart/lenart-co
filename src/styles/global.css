@@ -15,7 +15,7 @@
     --color-primary-green: 190 242 100;
     --color-primary-yellow: 255 222 105;
 
-    --color-text-body: 89 83 82;
+    --color-text-body: 0 24 37;
     --color-text-heading: 89 83 82;
     --color-text-bold: 89 83 82;
     --color-text-muted: 100 116 139;
@@ -23,13 +23,14 @@
     --color-text-code: 0 0 0;
     --color-text-selection: 0 0 0;
 
-    --color-bg-body: 252 251 247;
+    --color-bg-body: 252 250 243;
     --color-bg-code: 254 243 199;
     --color-bg-selection: 241 183 183;
 
     --color-border-code: 255 237 213;
 
     --color-camayana: 214 40 40;
+    --color-darkblue: 0 48 73;
   }
 
   /* dark theme */
@@ -38,22 +39,23 @@
     --color-primary-green: 190 242 100;
     --color-primary-yellow: 255 222 105;
 
-    --color-text-body: 255 255 255;
-    --color-text-heading: 255 255 255;
-    --color-text-bold: 255 255 255;
+    --color-text-body: 252 250 243;
+    --color-text-heading: 252 250 243;
+    --color-text-bold: 252 250 243;
     --color-text-muted: 148 163 184;
-    /* Camayana */
     --color-text-link: 214 40 40;
-    --color-text-code: 255 255 255;
+    --color-text-code: 252 250 243;
     --color-text-selection: 0 0 0;
 
-    --color-bg-body: 28 28 28;
+    --color-bg-body: 0 24 37;
     --color-bg-code: 14 165 233;
     --color-bg-selection: 241 183 183;
 
     --color-border-code: 254 243 199;
 
     --color-camayana: 214 40 40;
+    --color-darkblue: 0 48 73;
+    --color-ivorymist: 252 250 243;
   }
 
   :root {
@@ -199,7 +201,7 @@
   }
 
   .blog-item-link {
-    @apply transition-[background-size] duration-300 bg-gradient-to-r bg-left-bottom bg-no-repeat bg-[length:0%_2px] hover:bg-[length:100%_2px] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-camayana-light to-camayana-light dark:from-camayana dark:to-camayana;
+    @apply transition-[background-size] duration-300 bg-gradient-to-r bg-[left_bottom_0.5rem] bg-no-repeat bg-[length:0%_2px] hover:bg-[length:100%_2px] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-camayana-light to-camayana-light dark:from-camayana dark:to-camayana;
   }
 
   .logo-cloud-item {
