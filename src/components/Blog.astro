@@ -33,13 +33,18 @@ console.log(sortedPosts);
           day: 'numeric',
         }
       );
+
+      const postTitle = post.frontmatter.draft
+        ? '[DRAFT] ' + post.frontmatter.title
+        : post.frontmatter.title;
+
       return (
         <>
           <article class="mb-6 pb-6 border-b last:border-b-0 last:mb:0">
             <div class="mb-4">
               <h2 class="text-center text-3xl mb-4">
                 <a href={`/blog/${post.slug}`} class="unset blog-item-link">
-                  {post.frontmatter.title}
+                  {postTitle}
                 </a>
               </h2>
               <div class="text-center text-xs">

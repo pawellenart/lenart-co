@@ -31,6 +31,9 @@ const sortedPosts = posts
             month: 'short',
             day: 'numeric',
           });
+          const postTitle = post.frontmatter.draft
+            ? '[DRAFT] ' + post.frontmatter.title
+            : post.frontmatter.title;
           return (
             <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3 md:gap-2 items-start">
               <div class="title">
@@ -60,7 +63,7 @@ const sortedPosts = posts
                         from-camayana-light to-camayana-light dark:from-camayana dark:to-camayana
                       "
                   >
-                    {post.frontmatter.title}
+                    {postTitle}
                   </a>
                 )}
               </div>

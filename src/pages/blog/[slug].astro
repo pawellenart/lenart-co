@@ -37,11 +37,15 @@ const ogImageAbsoluteUrl =
   frontmatter.external !== true && frontmatter.ogImagePath
     ? new URL(frontmatter.ogImagePath, SITE_URL).toString()
     : undefined;
+
+const postTitle = frontmatter.draft
+  ? '[DRAFT] ' + frontmatter.title
+  : frontmatter.title;
 ---
 
-<ContentLayout title={frontmatter.title} date={frontmatter.date}>
+<ContentLayout title={postTitle} date={frontmatter.date}>
   <BlogPostMeta
-    title={frontmatter.title}
+    title={postTitle}
     description={frontmatter.external ? undefined : frontmatter.description}
     publishDate={frontmatter.date.toISOString()}
     pagePath={`/blog/${slug}`}
