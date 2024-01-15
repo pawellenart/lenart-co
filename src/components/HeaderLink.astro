@@ -13,6 +13,8 @@ const isActive = isHome || isOtherPages;
 ---
 
 <!-- DO NOT FORMAT. IT ADDS AN EXTRA SPACE ON RENDERED CONTENT. -->
-<a href={href} class:list={[className, 'unset animated-link']} {...props}
-  ><slot /></a
+<a
+  href={href}
+  class:list={[className, 'unset animated-link text-text-heading']}
+  {...props}><slot /></a
 >
