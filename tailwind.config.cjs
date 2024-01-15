@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Vollkorn', 'sans-serif'],
-        heading: ['Vollkorn', 'sans-serif'],
+        body: ['Libre Caslon Text', 'Vollkorn', 'sans-serif'],
+        heading: ['Catamaran', 'Vollkorn', 'sans-serif'],
       },
       colors: {
         transparent: 'transparent',
