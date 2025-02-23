@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         body: ['Libre Caslon Text', 'Vollkorn', 'sans-serif'],
-        heading: ['Catamaran', 'Vollkorn', 'sans-serif'],
+        heading: ['Playfair Display', 'serif'],
       },
       colors: {
         transparent: 'transparent',

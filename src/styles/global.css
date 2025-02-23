@@ -201,7 +201,7 @@
   }
 
   .blog-item-link {
-    @apply transition-[background-size] duration-300 bg-gradient-to-r bg-[left_bottom_0.5rem] bg-no-repeat bg-[length:0%_2px] hover:bg-[length:100%_2px] dark:bg-[length:0%_2px] hover:dark:bg-[length:100%_2px] from-camayana-light to-camayana-light dark:from-camayana dark:to-camayana;
+    @apply hover:text-camayana-light;
   }
 
   .logo-cloud-item {
